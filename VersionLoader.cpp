@@ -49,8 +49,8 @@ BOOL APIENTRY DllMain(HMODULE hModule,
     if (ul_reason_for_call == DLL_PROCESS_ATTACH) {
         DisableThreadLibraryCalls(hModule);
         SetDefaultDllDirectories(
-                LOAD_LIBRARY_SEARCH_SYSTEM32 |
                 LOAD_LIBRARY_SEARCH_APPLICATION_DIR |
+                LOAD_LIBRARY_SEARCH_SYSTEM32 |
                 LOAD_LIBRARY_SEARCH_USER_DIRS
         );
     }
